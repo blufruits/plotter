@@ -45,8 +45,6 @@ file.close()
 
 plt.style.use('dark_background') #change style to dark_background
 plt.scatter(x_list,y_list,color='r') #plot a scatter graph of y vs x
-plt.xlim(0,6) #axis range
-plt.ylim(0,13) #axis range
 plt.title('y vs x') #add title
 plt.xlabel('x') #label x axis
 plt.ylabel('y') #label y axis
