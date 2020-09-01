@@ -4,7 +4,7 @@ This repository exists purely to aid my learning of Python. As a result of this 
 
 What the script does:
 
-The script will ask the user if any data pairs would like to be input (x and y). If yes, the data will be input and saved to a 'data.csv' file in the same directory as the .py file. This step can be repeated to the user's liking. When the user has finished inputtng the data, a scatter plot will be displayed. Since the data is stored in the 'data.csv' file, the scatter plot can be amended over time.
+The script will ask the user if any data pairs would like to be input (x and y). If yes, the data will be input and saved to a 'data.csv' file in the same directory as the .py file (the x_y_plotter directory). This step can be repeated to the user's liking. When the user has finished inputtng the data, a scatter plot will be displayed. Since the data is stored in the 'data.csv' file, the scatter plot can be amended over time.
 
 Usage:
 
