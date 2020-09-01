@@ -48,6 +48,8 @@ plt.scatter(x_list,y_list,color='r') #plot a scatter graph of y vs x
 plt.title('y vs x') #add title
 plt.xlabel('x') #label x axis
 plt.ylabel('y') #label y axis
+plt.ylim(ymin=0) #forces y axis start at 0
+plt.xlim(xmin=0) #forces x axis start at 0
 plt.tight_layout()
 plt.show() #show the plot
 
