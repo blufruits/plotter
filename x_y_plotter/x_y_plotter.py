@@ -30,14 +30,14 @@ while repeat == True:
 #############################################################################################################
 
 file = open('data.csv','r') #referencing the csv file
-reader = csv.reader(file) #parsing the csv file. There is no need for the csv file to be sorted hence I do not bother to do this
+reader = csv.reader(file) #parsing the csv file. There is no need for the csv file to be sorted hence I do not bother doing this
 
 x_list = [] #defining empty x list
 y_list = [] #defining empty y list
 
 for row in reader:  #iterates through each row
-    x_list.append(float(row[0])) #adding the first piece of data to the x list (distance)
-    y_list.append(float(row[1])) #adding the second piece of data to the y list (pay)
+    x_list.append(float(row[0])) #adding the first piece of data in the row to the x list 
+    y_list.append(float(row[1])) #adding the second piece of data in the row to the y list
 
 file.close()
 
