@@ -30,7 +30,7 @@ while repeat == True:
 #############################################################################################################
 
 file = open('data.csv','r') #referencing the csv file
-reader = csv.reader(file) #parsing the csv file. There is no need for the csv file to be in ascending order hence I do not bother
+reader = csv.reader(file) #parsing the csv file. There is no need for the csv file to be sorted hence I do not bother to do this
 
 x = [] #defining empty x list
 y = [] #defining empty y list
