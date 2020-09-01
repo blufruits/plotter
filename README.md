@@ -1,6 +1,6 @@
 # x and y plotter
 
-This repository exists purely to aid my learning of Python - as a result of this there are many comments that are probably not useful to others. The pyplot module from the matplotlib library is requried.
+This repository exists purely to aid my learning of Python. As a result of this there are many comments that are probably not useful to others. The pyplot module from the matplotlib library is requried.
 
 What the script does:
 
