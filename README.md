@@ -8,7 +8,7 @@ Instructions:
 2. Install python3
 3. Download the matplotlib and numpy libraries if do not already have them
 4. Open the 'Main' directory and edit the 'settings.txt' file to your liking
-5. Run the 'plotter.py' script 
+5. Run the 'plot.py' script 
 6. Proceed as instructed
 
 What the script does:
