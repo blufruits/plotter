@@ -16,7 +16,7 @@ def firstquestion(): #function that asks user what to do
     answer = input("""
 Do you want to input another x/y pair? (Y/N) => """)
     
-    if answer in ('Y'): #finding answer
+    if answer in ('Y',''): #finding answer
         x = input("""   
 Input x """)            #input x
         y = input ("Input y ") #input y
@@ -97,7 +97,7 @@ if regress == True:
         b = round(b,2) #round to 2dp
         c = round(c,2)
         func_name = ('y = '+str(a)+'x^2 + '+str(b)+"x + "+str(c)) #definining label name
-        plt.plot(t, a*(t**2) + b*(t) + c,label=func_name) #plotting this polynomial using the values from t
+        plt.plot(t, a*(t**2) + b*(t) + c,'-g',label=func_name) #plotting this polynomial using the values from t
         plt.legend(loc='upper left') #location of label
 
     else:
