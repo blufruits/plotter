@@ -4,9 +4,9 @@ This repository exists purely to aid my learning of Python. As a result of this 
 
 Usage instructions:
 
-1. Download the files
+1. Download the files (big green button) and unzip them
 2. Install python3
-3. Download the matplotlib and numpy libraries as required
+3. Download the matplotlib and numpy libraries if need be
 4. Open the 'Main' directory and edit 'settings.txt' to your liking
 5. Run the 'plotter.py' script 
 6. Proceed as instructed
