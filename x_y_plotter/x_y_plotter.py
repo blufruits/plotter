@@ -88,7 +88,7 @@ if regress == True:
         c = round(c,2)
         func_name = ('y = '+str(b)+"x + "+str(c))
         plt.plot(t, b*(t) + c,'-g',label=func_name) #plotting this polynomial using the values from t
-        plt.legend(loc='upper left') #location of label
+        plt.legend(loc='best') #location of label
 
     elif degree in (2,'2'):
         plt.style.use('dark_background') #change style to dark_background
@@ -98,7 +98,7 @@ if regress == True:
         c = round(c,2)
         func_name = ('y = '+str(a)+'x^2 + '+str(b)+"x + "+str(c)) #definining label name
         plt.plot(t, a*(t**2) + b*(t) + c,'-g',label=func_name) #plotting this polynomial using the values from t
-        plt.legend(loc='upper left') #location of label
+        plt.legend(loc='best') #location of label
 
     else:
         print("""
