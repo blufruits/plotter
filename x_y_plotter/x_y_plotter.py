@@ -56,8 +56,7 @@ file.close()
 #plotting regression line (works but not elegant - improvements in progress)
 
 def secondquestion():
-    reg_answer = input("""
-Do you want to add a regression line (Up to ^2)? (Y/N) => """)
+    reg_answer = input("Do you want to add a regression line (Up to ^2)? (Y/N) => ")
 
     if reg_answer in ('Y'):
         return False, True
@@ -86,12 +85,19 @@ Input the degree of the regression line => """))
     if degree in (1,'1'):
         plt.style.use('dark_background') #change style to dark_background
         b,c = np.polyfit(x_array,y_array,1) #definining the coefficents of the linear polynomial
-        plt.plot(t, b*(t) + c) #plotting this polynomial using the values from t
+        b = round(b,2)
+        c = round(c,2)
+        func_name = ('y = '+str(b)+"x + "+str(c))
+        plt.plot(t, b*(t) + c,'-g',label=func_name) #plotting this polynomial using the values from t
 
     elif degree in (2,'2'):
         plt.style.use('dark_background') #change style to dark_background
         a,b,c = np.polyfit(x_array,y_array,2) #definining the coefficents of the quadratic polynomial
-        plt.plot(t, a*(t**2) + b*(t) + c) #plotting this polynomial using the values from t
+        a = round(a,2)
+        b = round(b,2) #round to 2dp
+        c = round(c,2)
+        func_name = ('y = '+str(a)+'x^2 + '+str(b)+"x + "+str(c)) #definining label name
+        plt.plot(t, a*(t**2) + b*(t) + c,label=func_name) #plotting this polynomial using the values from t
 
     else:
         print("""
@@ -102,16 +108,17 @@ else: #if user does not want a regression line the plot is shown
     pass
 
 #############################################################################################################
-#plotting graph 
+#plotting graph
 
 time.sleep(1) #wait 1 second
 plt.style.use('dark_background') #change style to dark_background
-plt.scatter(x_list,y_list,color='r') #plot a scatter graph of y vs x
+plt.scatter(x_list,y_list,s=22,marker='x',color='w') #plot a scatter graph of y vs x
 plt.title('y vs x') #add title
 plt.xlabel('x') #label x axis
 plt.ylabel('y') #label y axis
+plt.legend(loc='upper left') #location of label
 #plt.ylim(ymin=0) #forces y axis start at 0
 #plt.xlim(xmin=0) #forces x axis start at 0
 plt.tight_layout()
-#plt.grid(axis='both')
+#plt.grid(axis='both') #add grid to both axes
 plt.show() #show the plot
