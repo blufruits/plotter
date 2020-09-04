@@ -1,0 +1,27 @@
+This is the settings file. For yes/no questions simply type y or n with a space after the =.
+Do not change the structure of this layout. If the layout is incorrect the default settings will be used. If you wish to revert back to the default settings download a fresh settings.txt from the repository and place it in this directory.
+
+Colors:            Marker Styles:        Line Styles:
+
+"b" : blue         "." : point           ":" : dotted line  	
+"g" : green        "," : pixel           "-.": alternating length dashes
+"r" : red          "o" : circle          "..": dashes
+"c" : cyan         "s" : square          "-" : normal filled line
+"m" : magenta      "x" : cross
+"y" : yellow       "*" : star 
+"k" : black        "+" : plus
+"w" : white        "p" : pentagon                       
+################################################################################
+
+SETTINGS:
+
+x_axis_label = x 
+y_axis_label = y
+grid = n
+force_axis_start_0 = y
+dark_mode = y
+marker_size = 22
+marker_color = w
+marker_style = x
+regression_line_color = g
+regression_line_style = -
