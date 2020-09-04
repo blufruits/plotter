@@ -1,4 +1,4 @@
-# x and y plotter
+# x y plotter
 
 This repository exists purely to aid my learning of Python. As a result of this there are many comments that are probably not useful to others. The matplotlib and numpy libraries can be installed via pip3.
 
