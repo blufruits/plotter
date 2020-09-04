@@ -1,6 +1,6 @@
 # 2-Variable Plotter 
 
-This repository exists purely to aid my learning of Python. As a result of this there are many comments that are probably not useful to others. The matplotlib and numpy libraries are required.
+This partly exists to aid my learning of Python. As a result of this there are some comments that will not be useful to others. The matplotlib and numpy libraries are required.
 
 Instructions:
 
