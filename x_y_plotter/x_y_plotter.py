@@ -80,8 +80,7 @@ if regress == True:
     step = ((np.amax(x_array))-(np.amin(x_array)))*(1/1000)
     t = np.arange((np.amin(x_array)),(np.amax(x_array)),step) #defining array 't' which represents all the x values that will have the polynomial function applied to it.
                                                               #The step correlates the 'resolution' of the regression line. Change 'step' to a constant like 10 to see this in action
-    degree = int(input("""
-Input the degree of the regression line => """))
+    degree = int(input("Input the degree of the regression line => "))
     if degree in (1,'1'):
         plt.style.use('dark_background') #change style to dark_background
         b,c = np.polyfit(x_array,y_array,1) #definining the coefficents of the linear polynomial
@@ -89,6 +88,7 @@ Input the degree of the regression line => """))
         c = round(c,2)
         func_name = ('y = '+str(b)+"x + "+str(c))
         plt.plot(t, b*(t) + c,'-g',label=func_name) #plotting this polynomial using the values from t
+        plt.legend(loc='upper left') #location of label
 
     elif degree in (2,'2'):
         plt.style.use('dark_background') #change style to dark_background
@@ -98,6 +98,7 @@ Input the degree of the regression line => """))
         c = round(c,2)
         func_name = ('y = '+str(a)+'x^2 + '+str(b)+"x + "+str(c)) #definining label name
         plt.plot(t, a*(t**2) + b*(t) + c,label=func_name) #plotting this polynomial using the values from t
+        plt.legend(loc='upper left') #location of label
 
     else:
         print("""
@@ -116,9 +117,8 @@ plt.scatter(x_list,y_list,s=22,marker='x',color='w') #plot a scatter graph of y 
 plt.title('y vs x') #add title
 plt.xlabel('x') #label x axis
 plt.ylabel('y') #label y axis
-plt.legend(loc='upper left') #location of label
-#plt.ylim(ymin=0) #forces y axis start at 0
-#plt.xlim(xmin=0) #forces x axis start at 0
+plt.ylim(ymin=0) #forces y axis start at 0         ####WILL HIDE NEGATIVE VALUES####
+plt.xlim(xmin=0) #forces x axis start at 0         ####WILL HIDE NEGATIVE VALUES####
 plt.tight_layout()
 #plt.grid(axis='both') #add grid to both axes
 plt.show() #show the plot
