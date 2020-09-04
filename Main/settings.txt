@@ -1,5 +1,5 @@
 This is the settings file. For yes/no questions simply type y or n with a space after the =.
-Do not change the structure of this layout. If the layout is incorrect the default settings will be used. If you wish to revert back to the default settings download a fresh settings.txt from the repository and place it in this directory.
+Do not change the structure of this layout. If the layout is incorrect the default settings will be used. If you wish to revert back to the default settings download a fresh settings.txt from the repository and replace this one.
 
 Colors:            Marker Styles:        Line Styles:
 
