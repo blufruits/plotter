@@ -1,4 +1,4 @@
-This is the settings file. For yes/no questions simply type y or n with a space after the =.
+This is the settings file. For yes/no questions simply type y or n with a space after the '='.
 Do not change the structure of this layout. If the layout is incorrect the default setting will be used (you will be notified if this occurs).
 If you wish to revert back to the default settings you can download a fresh settings.txt file from the repository and replace this one with it.
 
