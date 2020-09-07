@@ -224,7 +224,7 @@ def firstquestion(): #function that asks user what to do
         except:
             print("""
 The 'data.csv' file is either missing or corrupted. It should be in the same directory as 'plot.py'.
-If it is missing simply use this program to enter data to generate it.
+If it is missing simply use this program to enter data to generate it (typical of a fresh download - just input some data)
 If it is corrupted either edit it directly or delete it and then use this program to enter data.
 """)
             return True #if no data.csv file is found the loop is not broken
