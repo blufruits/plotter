@@ -13,7 +13,7 @@ Instructions:
 
 What the script does:
 
-The script will ask the user if they would like to input any data. The data will be input and saved to a 'data.csv' file in the 'Main' directory. This step can be repeated to the user's liking. When the user has finished inputtng the data, a scatter plot will be displayed. The style of the plot can change to the user's liking by editing the settings.txt file. A regression line (up to n^2) can also be shown. Since the data is stored in the 'data.csv' file, the data can be amended over time.
+The script will ask the user if they would like to input any data. The data will be input and saved to a 'data.csv' file in the 'Main' directory. This step can be repeated to the user's liking. When the user has finished inputtng the data, a scatter plot will be displayed. The style of the plot can be changed by editing the settings.txt file. A regression line (up to n^2) can also be shown. Since the data is stored in the 'data.csv' file the data can be amended over time.
 
 Potential usefulness:
 
