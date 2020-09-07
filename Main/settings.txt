@@ -1,27 +1,37 @@
 This is the settings file. For yes/no questions simply type y or n with a space after the =.
-Do not change the structure of this layout. If the layout is incorrect the default settings will be used. If you wish to revert back to the default settings download a fresh settings.txt from the repository and replace this one.
+Do not change the structure of this layout. If the layout is incorrect the default setting will be used (you will be notified if this occurs).
+If you wish to revert back to the default settings you can download a fresh settings.txt file from the repository and replace this one with it.
 
 Colors:            Marker Styles:        Line Styles:
 
-"b" : blue         "." : point           ":" : dotted line  	
-"g" : green        "," : pixel           "-.": alternating length dashes
-"r" : red          "o" : circle          "..": dashes
-"c" : cyan         "s" : square          "-" : normal filled line
+"b" : blue         "." : point           "-" : solid 	
+"g" : green        "," : pixel           "--": dashed
+"r" : red          "o" : circle          "-.": dashdot
+"c" : cyan         "s" : square          ":" : dotted
 "m" : magenta      "x" : cross
 "y" : yellow       "*" : star 
 "k" : black        "+" : plus
-"w" : white        "p" : pentagon                       
+"w" : white        "p" : pentagon  
+                     
 ################################################################################
 
 SETTINGS:
 
-x_axis_label = x 
-y_axis_label = y
-grid = n
-force_axis_start_0 = y #this will hide x,y < 0 
-dark_mode = y
-marker_size = 22
+prompt_user_to_edit_settings = y
+prompt_user_to_input_data = y
+x_name = x 
+y_name = y
+grid_true = n
+force_axis_start_0_true = y #WARNING - this will hide all information < 0 
+dark_mode_true = y
+marker_size = 30
 marker_color = w
 marker_style = x
-regression_line_color = g
-regression_line_style = -
+show_regression_line_degree1 = y
+regression_line_degree1_color = g 
+regression_line_degree1_style = -
+show_regression_line_degree2 = n
+regression_line_degree2_color = c
+regression_line_degree2_style = -
+regression_line_extension_multiplier = 0.05 #e.g with 0.1 line will extend by 0.1(xmax-xmin)
+show_extra_details = y
