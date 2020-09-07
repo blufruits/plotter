@@ -7,7 +7,7 @@ Instructions:
 1. Download the files and unzip them
 2. Install [python3](https://www.python.org/downloads/)
 3. Download the matplotlib and numpy libraries if do not already have them
-4. Open the 'Main' directory and edit the 'settings.txt' file to your liking
+4. Open the 'Main' directory and edit the 'settings.txt' file to your liking. I recommend using [pip](https://pip.pypa.io/en/stable/installing/)
 5. Run the 'plot.py' script 
 6. Proceed as instructed
 
