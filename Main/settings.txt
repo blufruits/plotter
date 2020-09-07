@@ -18,7 +18,7 @@ SETTINGS:
 x_axis_label = x 
 y_axis_label = y
 grid = n
-force_axis_start_0 = y
+force_axis_start_0 = y #this will hide x,y < 0 
 dark_mode = y
 marker_size = 22
 marker_color = w
