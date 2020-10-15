@@ -8,7 +8,7 @@ Instructions:
 2. Install [python3](https://www.python.org/downloads/)
 3. Download the matplotlib and numpy libraries if do not already have them (use [pip](https://pip.pypa.io/en/stable/installing/) to do this)
 4. Open the 'Main' directory and edit the 'settings.txt' file to your liking
-5. Run the 'plot.py' script (the easiest way is to type 'python3 plot.py' into the terminal)
+5. Run the 'plot.py' script (typing 'python3 plot.py' into the terminal is the easiest way of doing this)
 6. Proceed as instructed
 
 What the script does:
